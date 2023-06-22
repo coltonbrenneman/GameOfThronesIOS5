@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TopLevelDictionary: Decodable {
+struct Character: Decodable {
     private enum CodingKeys: String, CodingKey {
         case characterID = "id"
         case firstName

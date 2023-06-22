@@ -112,6 +112,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FWG-Hx-iJI"/>
+                    <connections>
+                        <outlet property="characterFamilyLabel" destination="MSN-xy-9pC" id="UHV-Xs-FBJ"/>
+                        <outlet property="characterFullNameLabel" destination="3zq-TV-3Aj" id="SoJ-AY-eSp"/>
+                        <outlet property="characterImageView" destination="eiC-h3-3j9" id="lnY-z8-9xR"/>
+                        <outlet property="characterTitleLabel" destination="DJd-Lu-usP" id="crX-wK-I5V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xMP-h3-YOx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

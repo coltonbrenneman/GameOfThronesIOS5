@@ -15,6 +15,8 @@
 		445FBDC12A44E4CF000545C1 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FBDC02A44E4CF000545C1 /* Character.swift */; };
 		445FBDC52A44EA8B000545C1 /* CharacterListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FBDC42A44EA8B000545C1 /* CharacterListTableViewController.swift */; };
 		445FBDC72A44EB2B000545C1 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FBDC62A44EB2B000545C1 /* CharacterDetailViewController.swift */; };
+		445FBDCA2A44EBE0000545C1 /* NetworkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FBDC92A44EBE0000545C1 /* NetworkingController.swift */; };
+		445FBDCC2A44EBE9000545C1 /* ResultError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FBDCB2A44EBE9000545C1 /* ResultError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		445FBDC02A44E4CF000545C1 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		445FBDC42A44EA8B000545C1 /* CharacterListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListTableViewController.swift; sourceTree = "<group>"; };
 		445FBDC62A44EB2B000545C1 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		445FBDC92A44EBE0000545C1 /* NetworkingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingController.swift; sourceTree = "<group>"; };
+		445FBDCB2A44EBE9000545C1 /* ResultError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		445FBDC22A44EA6B000545C1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				445FBDC82A44EBCF000545C1 /* ModelControllers */,
 				445FBDC32A44EA76000545C1 /* ViewControllers */,
 			);
 			path = Controllers;
@@ -111,6 +116,15 @@
 				445FBDC62A44EB2B000545C1 /* CharacterDetailViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		445FBDC82A44EBCF000545C1 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				445FBDC92A44EBE0000545C1 /* NetworkingController.swift */,
+				445FBDCB2A44EBE9000545C1 /* ResultError.swift */,
+			);
+			path = ModelControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +201,8 @@
 				445FBDC72A44EB2B000545C1 /* CharacterDetailViewController.swift in Sources */,
 				445FBDC12A44E4CF000545C1 /* Character.swift in Sources */,
 				445FBDC52A44EA8B000545C1 /* CharacterListTableViewController.swift in Sources */,
+				445FBDCC2A44EBE9000545C1 /* ResultError.swift in Sources */,
+				445FBDCA2A44EBE0000545C1 /* NetworkingController.swift in Sources */,
 				445FBDAA2A44E402000545C1 /* AppDelegate.swift in Sources */,
 				445FBDAC2A44E402000545C1 /* SceneDelegate.swift in Sources */,
 			);

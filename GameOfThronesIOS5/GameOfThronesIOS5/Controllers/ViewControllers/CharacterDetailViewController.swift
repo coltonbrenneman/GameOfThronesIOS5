@@ -8,7 +8,14 @@
 import UIKit
 
 class CharacterDetailViewController: UIViewController {
-
+    
+    // MARK: - Outlets
+    @IBOutlet weak var characterFullNameLabel: UILabel!
+    @IBOutlet weak var characterTitleLabel: UILabel!
+    @IBOutlet weak var characterFamilyLabel: UILabel!
+    @IBOutlet weak var characterImageView: UIImageView!
+    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
