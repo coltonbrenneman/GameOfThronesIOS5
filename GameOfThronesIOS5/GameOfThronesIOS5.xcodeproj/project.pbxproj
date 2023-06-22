@@ -17,6 +17,7 @@
 		445FBDC72A44EB2B000545C1 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FBDC62A44EB2B000545C1 /* CharacterDetailViewController.swift */; };
 		445FBDCA2A44EBE0000545C1 /* NetworkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FBDC92A44EBE0000545C1 /* NetworkingController.swift */; };
 		445FBDCC2A44EBE9000545C1 /* ResultError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FBDCB2A44EBE9000545C1 /* ResultError.swift */; };
+		445FBDCE2A44F30B000545C1 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FBDCD2A44F30B000545C1 /* CharacterTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		445FBDC62A44EB2B000545C1 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
 		445FBDC92A44EBE0000545C1 /* NetworkingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingController.swift; sourceTree = "<group>"; };
 		445FBDCB2A44EBE9000545C1 /* ResultError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultError.swift; sourceTree = "<group>"; };
+		445FBDCD2A44F30B000545C1 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			children = (
 				445FBDC42A44EA8B000545C1 /* CharacterListTableViewController.swift */,
 				445FBDC62A44EB2B000545C1 /* CharacterDetailViewController.swift */,
+				445FBDCD2A44F30B000545C1 /* CharacterTableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				445FBDCA2A44EBE0000545C1 /* NetworkingController.swift in Sources */,
 				445FBDAA2A44E402000545C1 /* AppDelegate.swift in Sources */,
 				445FBDAC2A44E402000545C1 /* SceneDelegate.swift in Sources */,
+				445FBDCE2A44F30B000545C1 /* CharacterTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
