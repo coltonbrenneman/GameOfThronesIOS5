@@ -5,11 +5,10 @@
 //  Created by Colton Brenneman on 6/22/23.
 //
 
-import Foundation
+import UIKit.UIImage
 
 struct NetworkingController {
     
-    // https://thronesapi.com/api/v2/Characters
     func fetchCharacters(with searchTerm: String, completion: @escaping(Result<Character, ResultError>) -> Void) {
         guard let baseURL = URL(string: "https://thronesapi.com/api/v2/Characters") else { completion(.failure(.invalidURL)) ; return }
         
@@ -35,7 +34,21 @@ struct NetworkingController {
     } // End of fetchCharacters
     
     // https://thronesapi.com/assets/images/daenerys.jpg
-    func fetchImage() {
+    func fetchImage(with imagePath: String, completion: @escaping(Result<UIImage, ResultError>) -> Void) {
+        guard let baseURL = URL(string: "https://thronesapi.com/assets/images/daenerys.jpg") else { completion(.failure(.invalidURL)) ; return }
         
+        var urlRequest = URLRequest(url: baseURL)
+        urlRequest.url?.append(path: imagePath)
+        print(urlRequest.url)
+        
+        URLSession.shared.dataTask(with: urlRequest) { imageData, _, error in
+            if let error {
+                completion(.failure(.thrownError(error))) ; return
+            } // End of error
+            guard let imageData else { completion(.failure(.noData)) ; return }
+            
+            guard let characterImage = UIImage(data: imageData) else { return }
+            completion(.success(characterImage))
+        }.resume() // End of dataTask
     } // End of fetchImage
 } // End of struct
